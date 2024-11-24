@@ -1,0 +1,29 @@
+/* app/components/Header.module.css */
+.header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+.header h1 {
+    color: white;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.hidden {
+    top: -100px;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
